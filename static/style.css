@@ -1,0 +1,366 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f7ff;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 700;
+    color: #12315b;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #1d4ed8;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #eaf3ff,
+        #dbeafe
+    );
+
+    padding: 75px 7%;
+    border-bottom: 1px solid #dbeafe;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    line-height: 1.15;
+    color: #102a43;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #486581;
+    max-width: 650px;
+}
+
+
+/* =========================
+   Main Container
+========================= */
+
+.container {
+    width: 86%;
+    max-width: 1100px;
+    margin: 45px auto;
+}
+
+
+/* =========================
+   Cards
+========================= */
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e1eaf4;
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 10px 30px rgba(37, 99, 235, 0.08);
+}
+
+.card h2 {
+    color: #102a43;
+    margin-bottom: 8px;
+    font-size: 25px;
+}
+
+.card-subtitle {
+    color: #627d98;
+    margin-bottom: 27px;
+}
+
+
+/* =========================
+   Form
+========================= */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+label {
+    color: #243b53;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px 15px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+
+    background: #ffffff;
+    color: #172033;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: all 0.2s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #94a3b8;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3b82f6;
+
+    box-shadow:
+        0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+textarea {
+    min-height: 135px;
+    resize: vertical;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+button {
+    border: none;
+    border-radius: 9px;
+
+    padding: 13px 22px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.primary-button {
+    background: #2563eb;
+    color: #ffffff;
+
+    box-shadow:
+        0 5px 12px rgba(37, 99, 235, 0.22);
+}
+
+.primary-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.secondary-button {
+    background: #e8f1ff;
+    color: #1d4ed8;
+
+    border: 1px solid #bfdbfe;
+}
+
+.secondary-button:hover {
+    background: #dbeafe;
+}
+
+
+/* =========================
+   Message
+========================= */
+
+#message {
+    margin-top: 20px;
+    padding: 12px 15px;
+
+    border-radius: 9px;
+
+    background: #f0f7ff;
+    color: #1d4ed8;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   Request Cards
+========================= */
+
+#requests {
+    margin-top: 25px;
+}
+
+.request-card {
+    background: #f8fbff;
+
+    border: 1px solid #dbeafe;
+    border-left: 5px solid #3b82f6;
+
+    border-radius: 12px;
+
+    padding: 22px;
+
+    margin-bottom: 16px;
+
+    transition: all 0.2s ease;
+}
+
+.request-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.08);
+}
+
+.request-card h3 {
+    color: #1d4ed8;
+    margin-bottom: 14px;
+    font-size: 18px;
+}
+
+.request-row {
+    margin: 7px 0;
+    color: #486581;
+}
+
+.request-row strong {
+    color: #243b53;
+}
+
+.status {
+    display: inline-block;
+
+    background: #dcfce7;
+    color: #15803d;
+
+    padding: 4px 11px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+    background: #102a43;
+
+    color: #dbeafe;
+
+    text-align: center;
+
+    padding: 30px;
+
+    font-size: 14px;
+}
+
+.footer p:first-child {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 16px 5%;
+    }
+
+    .hero {
+        padding: 55px 5%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: auto;
+    }
+
+    .card {
+        padding: 22px;
+    }
+}
+

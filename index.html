@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cloud Support Portal</title>
+
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            ☁ Cloud<span>Support</span>
+        </div>
+
+        <a href="#requests-section" class="nav-link">
+            My Requests
+        </a>
+
+    </header>
+
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>How can we help you?</h1>
+
+            <p>
+                Submit a support request and our team will help you
+                resolve your issue quickly and efficiently.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+
+        <!-- Support Form -->
+        <section class="card">
+
+            <h2>Submit a Support Request</h2>
+
+            <p class="card-subtitle">
+                Please provide the details below so we can understand your issue.
+            </p>
+
+
+            <form id="feedbackForm">
+
+                <div class="form-grid">
+
+
+                    <!-- Name -->
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Category -->
+                    <div class="form-group">
+
+                        <label for="category">
+                            Issue Category
+                        </label>
+
+                        <select id="category" required>
+
+                            <option value="">
+                                Select a category
+                            </option>
+
+                            <option value="Technical Issue">
+                                Technical Issue
+                            </option>
+
+                            <option value="Account Issue">
+                                Account Issue
+                            </option>
+
+                            <option value="Service Inquiry">
+                                Service Inquiry
+                            </option>
+
+                            <option value="Feedback">
+                                Feedback
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Description -->
+                    <div class="form-group full-width">
+
+                        <label for="description">
+                            Describe Your Issue
+                        </label>
+
+                        <textarea
+                            id="description"
+                            placeholder="Tell us what you are experiencing..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Submit -->
+                    <div class="form-group full-width">
+
+                        <button
+                            type="submit"
+                            class="primary-button"
+                        >
+                            Submit Support Request
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+
+            <p id="message"></p>
+
+        </section>
+
+
+
+        <!-- Requests Section -->
+        <section
+            class="card"
+            id="requests-section"
+        >
+
+            <h2>Your Support Requests</h2>
+
+            <p class="card-subtitle">
+                View the support requests stored in our cloud system.
+            </p>
+
+
+            <button
+                id="loadRequests"
+                class="secondary-button"
+            >
+                View My Requests
+            </button>
+
+
+            <div id="requests"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            Cloud Support Portal • Serverless AWS Application
+        </p>
+
+        <p>
+            S3 • API Gateway • Lambda • DynamoDB
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="static/script.js"></script>
+
+</body>
+
+</html>
